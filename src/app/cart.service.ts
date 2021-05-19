@@ -5,11 +5,12 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CartService {
+  //items = [];
   items = [];
 
   constructor(private http: HttpClient) {}
 
-  addToCart(product) {
+  addToCart(product: String) {
     this.items.push(product);
   }
 
